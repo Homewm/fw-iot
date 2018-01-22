@@ -1,0 +1,8 @@
+2017-07-25 07:39:20 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: FirmCrawler)
+2017-07-25 07:39:20 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'FirmCrawler.spiders', 'SPIDER_MODULES': ['FirmCrawler.spiders'], 'LOG_LEVEL': 'INFO', 'DOWNLOAD_DELAY': 0.25, 'BOT_NAME': 'FirmCrawler'}
+Usage
+=====
+  scrapy crawl [options] <spider>
+
+crawl: error: running 'scrapy crawl' with more than one spider is no longer supported
+YICHANG
