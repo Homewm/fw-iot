@@ -71,7 +71,8 @@ def download(cur):
                 print fsize
                 fsize = int(fsize)
                 if fsize < file_size:
-                    urllib.urlretrieve(url, filename)
+                    urllib.urlretrieve(url, filename+'_tmp')
+                    os.rename(filename+'_tmp',filename)
                     #with open(filename, 'wb') as f:
                     #    f.write(res.read())
                     #    f.close()
@@ -98,7 +99,6 @@ def download(cur):
         collection.update(
             {"_id": cur['_id']}, {"$set": {'status': 4}})
         return
-
 
 
 
